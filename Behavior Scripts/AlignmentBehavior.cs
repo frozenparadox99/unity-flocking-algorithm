@@ -12,7 +12,7 @@ public class AlignmentBehavior : FlockBehavior
         if (context.Count == 0)
             return agent.transform.up;
 
-        // add all points together and average -----> all the flocking takes place around a centroid
+        // add all points together and average -----> get the mean direction to face
         Vector2 alignmentMove = Vector2.zero;
         foreach (Transform item in context)
         {
